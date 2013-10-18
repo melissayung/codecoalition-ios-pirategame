@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #include "MYTile.h"
+#include "MYCharacter.h"
+#include "MYBoss.h"
 
-@interface MYTileFactory : NSObject
+@interface MYFactory : NSObject
 
 // The idea behing putting those in arrays and having a starting tile is so that we can
 // randomise the tiles but this is a bonus implementation
@@ -18,4 +20,6 @@
 
 -(NSArray*) createTiles;
 -(NSMutableArray*) createColumnArray:(int)col numRows:(int)rows;
+-(MYCharacter*) createCharacter;
+-(MYBoss*) createBoss;
 @end

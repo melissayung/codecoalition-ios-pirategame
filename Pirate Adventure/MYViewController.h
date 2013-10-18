@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "MYCharacter.h"
+#import "MYBoss.h"
 #import "MYTile.h"
+#import "MYFactory.h"
 
 @interface MYViewController : UIViewController
 
@@ -30,8 +32,7 @@
 
 @property (strong, nonatomic) IBOutlet UIView *actionBarBg;
 @property (strong, nonatomic) IBOutlet UIImageView *storyBgImage;
-
-@property (strong, nonatomic) IBOutlet UIButton *actionBtn;
+@property (strong, nonatomic) IBOutlet UIButton *actionBtnLabel;
 @property (strong, nonatomic) IBOutlet UIButton *moveLeftBtn;
 @property (strong, nonatomic) IBOutlet UIButton *moveUpBtn;
 @property (strong, nonatomic) IBOutlet UIButton *moveDownBtn;
@@ -39,6 +40,8 @@
 
 @property (nonatomic) CGPoint currentPosition;
 @property (strong, nonatomic) MYCharacter *character;
+@property (strong, nonatomic) MYBoss *boss;
 @property (strong, nonatomic) MYTile *currentTile;
+@property (strong, nonatomic) MYFactory *factory;
 @property (strong, nonatomic) NSArray *tiles;
 @end

@@ -19,6 +19,5 @@
 
 
 +(MYCharacter*) getInstance;
-//+(void) startGame;
 
 @end

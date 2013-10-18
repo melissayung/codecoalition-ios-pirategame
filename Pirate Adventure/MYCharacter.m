@@ -19,11 +19,4 @@ static MYCharacter* instance = nil;    // static instance variable
     return instance;
 }
 
-//+(void) startGame {
-//    self.health = 100;
-//    self.damage = 0;
-//    self.armor = nil;
-//    self.weapon = nil;
-//}
-
 @end
